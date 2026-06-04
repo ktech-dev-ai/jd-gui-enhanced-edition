@@ -11,13 +11,15 @@ This project is based on the original **JD-GUI** by Emmanuel Dupuy.
 ## Description
 JD-GUI Enhanced Edition builds upon the robust foundation of the original JD-GUI by introducing advanced search capabilities and numerous quality-of-life improvements. You can browse the reconstructed source code with instant access to methods and fields, and now perform highly targeted, complex searches across large codebases with ease.
 
-### Enhancements in this Edition:
-- **Advanced Multi-File Search:** Search across `.class` files and resources simultaneously or independently.
-- **Explicit Resources Support:** Dedicated toggle to search non-class files (`.xml`, `.properties`, `.json`, etc.).
-- **Regex & Exact Match:** Support for complex Regular Expressions and an "Exact Match" mode to eliminate substring false-positives.
-- **File Masking & Scoping:** Filter search results using glob patterns (e.g., `*Controller.class`, `*.xml`) with a convenient dropdown of presets.
-- **Persistent Search History:** Your past search patterns and file masks are automatically saved and remembered across application restarts.
-- **UI & Bug Fixes:** Resolved tree-collapsing and highlighter resetting bugs during search result navigation.
+### The Evolution of JD-GUI: Before & After
+
+| Feature Area | Original JD-GUI (v1.6.6) | JD-GUI Enhanced Edition (v2.0.0) |
+| :--- | :--- | :--- |
+| **Search Capabilities** | Basic, case-insensitive string search within `.class` files. | **Advanced Multi-File Search** across `.class` and **Resource files** (`.xml`, `.properties`, etc.). |
+| **Match Precision** | Results cluttered with substring false-positives. | **Exact Match** & **Regular Expressions** to pinpoint exactly what you need. |
+| **Scoping & Filtering** | Unable to filter searches by file name or type. | **File Mask Scoping** using powerful glob patterns (e.g., `*Controller.class`). |
+| **User Experience** | Loses search history upon application restart. | **Persistent History** automatically remembers search patterns and masks. |
+| **Stability** | Search results tree collapses unexpectedly; highlights reset. | **UI Bug Fixes** resolve tree-collapsing and highlighter state bugs. |
 
 ## Download
 You can download the latest pre-compiled binaries from our official landing page or directly from GitHub Releases:

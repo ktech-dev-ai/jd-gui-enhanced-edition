@@ -67,35 +67,39 @@
 
     <!-- Features Section -->
     <section id="features" class="features-section">
-        <h2 class="section-title">What's New in Enhanced Edition</h2>
-        <div class="features-grid">
-            <div class="feature-card glass-card reveal">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <h2 class="section-title">The Evolution of JD-GUI</h2>
+        <div class="comparison-grid">
+            <!-- Original Column -->
+            <div class="comparison-column original-column glass-card reveal">
+                <div class="column-header">
+                    <h3>Original JD-GUI</h3>
+                    <span class="version-tag">v1.6.6</span>
                 </div>
-                <h3>Advanced Search</h3>
-                <p>Search across `.class` files and resources simultaneously. Pinpoint exactly what you need with high precision.</p>
+                <ul class="feature-list">
+                    <li><svg viewBox="0 0 24 24" class="icon icon-old"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Excellent `.class` file decompilation</li>
+                    <li><svg viewBox="0 0 24 24" class="icon icon-old"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Syntax highlighting</li>
+                    <li><svg viewBox="0 0 24 24" class="icon icon-old"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Standalone graphical utility</li>
+                    <li class="negative"><svg viewBox="0 0 24 24" class="icon icon-missing"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg> Basic, case-insensitive string search</li>
+                    <li class="negative"><svg viewBox="0 0 24 24" class="icon icon-missing"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg> Search results cluttered with substring false-positives</li>
+                    <li class="negative"><svg viewBox="0 0 24 24" class="icon icon-missing"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg> Unable to filter search by specific file types or paths</li>
+                    <li class="negative"><svg viewBox="0 0 24 24" class="icon icon-missing"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg> Loses search history upon restarting</li>
+                </ul>
             </div>
-            <div class="feature-card glass-card reveal">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+            <!-- Enhanced Column -->
+            <div class="comparison-column enhanced-column glass-card reveal">
+                <div class="column-header">
+                    <h3>Enhanced Edition</h3>
+                    <span class="version-tag highlight-bg">v2.0.0</span>
                 </div>
-                <h3>File Mask Scoping</h3>
-                <p>Filter your search results using powerful glob patterns (e.g., `*Controller.class`, `*.xml`) to narrow your focus.</p>
-            </div>
-            <div class="feature-card glass-card reveal">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
-                </div>
-                <h3>Exact & Regex Match</h3>
-                <p>Eliminate substring false positives with Exact Match, or harness the full power of Regular Expressions.</p>
-            </div>
-            <div class="feature-card glass-card reveal">
-                <div class="icon-wrapper">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
-                </div>
-                <h3>Persistent History</h3>
-                <p>Your search patterns and file masks are automatically saved and remembered across application restarts.</p>
+                <ul class="feature-list">
+                    <li><svg viewBox="0 0 24 24" class="icon icon-new"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Everything in Original</strong>, plus:</li>
+                    <li class="positive"><svg viewBox="0 0 24 24" class="icon icon-new"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Advanced Multi-File Search:</strong> Simultaneously query `.class` and resource files</li>
+                    <li class="positive"><svg viewBox="0 0 24 24" class="icon icon-new"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Exact & Regex Match:</strong> Harness full Regular Expressions and pinpoint Exact Matches</li>
+                    <li class="positive"><svg viewBox="0 0 24 24" class="icon icon-new"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>File Mask Scoping:</strong> Filter results instantly using powerful glob patterns (e.g., `*.xml`)</li>
+                    <li class="positive"><svg viewBox="0 0 24 24" class="icon icon-new"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Persistent History:</strong> Automatically remembers your patterns and masks across restarts</li>
+                    <li class="positive"><svg viewBox="0 0 24 24" class="icon icon-new"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>UX Fixes:</strong> Resolved tree-collapsing and highlighter reset bugs during search</li>
+                </ul>
             </div>
         </div>
     </section>
