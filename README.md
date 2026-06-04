@@ -19,6 +19,12 @@ JD-GUI Enhanced Edition builds upon the robust foundation of the original JD-GUI
 - **Persistent Search History:** Your past search patterns and file masks are automatically saved and remembered across application restarts.
 - **UI & Bug Fixes:** Resolved tree-collapsing and highlighter resetting bugs during search result navigation.
 
+## Download
+You can download the latest pre-compiled binaries from our official landing page or directly from GitHub Releases:
+- 🌐 **[Official Website](https://ktech-dev-ai.github.io/jd-gui-enhanced-edition/)**
+- 🪟 **[Windows .exe](https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download/jd-gui-enhanced-edition.exe)**
+- 🍎 **[macOS .tar](https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download/jd-gui-osx-2.0.0.tar)**
+- ☕ **[Universal .jar](https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download/jd-gui-2.0.0.jar)**
 ## How to build JD-GUI Enhanced Edition ?
 ```
 > git clone [YOUR_GITHUB_REPO_URL]
