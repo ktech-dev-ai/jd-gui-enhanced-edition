@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ktech-dev-ai.github.io/jd-gui-enhanced-edition/sitemap.xml
