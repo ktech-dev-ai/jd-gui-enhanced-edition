@@ -27,21 +27,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Since the version is 1.6.6 currently, the static links in HTML are hardcoded.
-// If you want to dynamically fetch the latest release from GitHub API, you could do it here:
-/*
+// Dynamically fetch the latest release from GitHub API
 async function fetchLatestRelease() {
     try {
         const response = await fetch('https://api.github.com/repos/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest');
         if (response.ok) {
             const data = await response.json();
-            // Update download links dynamically based on the assets in the data payload
-            console.log("Latest release version: " + data.tag_name);
-            // This allows the website to be completely hands-off after publication.
+            const version = data.tag_name.replace('v', ''); // e.g. "2.0.0"
+            
+            // Generate the dynamic download links
+            const baseUrl = `https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download`;
+            
+            const winBtn = document.getElementById('win-download');
+            const macBtn = document.getElementById('mac-download');
+            const jarBtn = document.getElementById('jar-download');
+            
+            if (winBtn) winBtn.href = `${baseUrl}/jd-gui-enhanced-edition.exe`;
+            if (macBtn) macBtn.href = `${baseUrl}/jd-gui-osx-${version}.tar`;
+            if (jarBtn) jarBtn.href = `${baseUrl}/jd-gui-${version}.jar`;
+            
+            console.log("Successfully fetched latest release version: " + version);
         }
     } catch (e) {
         console.error("Could not fetch latest release", e);
     }
 }
 fetchLatestRelease();
-*/
