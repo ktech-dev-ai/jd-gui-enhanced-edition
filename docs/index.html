@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JD-GUI Enhanced Edition - Advanced Java Decompiler with robust search capabilities.">
+    <title>JD-GUI Enhanced Edition | Advanced Java Decompiler</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements for Premium Look -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="highlight">JD</span>-GUI <span class="badge">Enhanced</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#download" class="nav-btn">Download</a>
+                <a href="https://github.com/ktech-dev-ai/jd-gui-enhanced-edition" target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="animate-up">Decompile. <span class="highlight-text">Analyze.</span> Master.</h1>
+            <p class="animate-up delay-1">The iconic Java Decompiler you know, supercharged with robust multi-file search, regular expressions, and deep scoping capabilities.</p>
+            <div class="hero-cta animate-up delay-2">
+                <a href="#download" class="btn btn-primary">Get Latest Version</a>
+                <a href="#features" class="btn btn-secondary">Explore Features</a>
+            </div>
+            <p class="attribution animate-up delay-3">Based on the original JD-GUI by Emmanuel Dupuy</p>
+        </div>
+        <div class="hero-image animate-fade delay-2">
+            <div class="glass-mockup">
+                <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="mockup-body">
+                    <pre><code><span class="keyword">public class</span> <span class="class-name">JDGuiEnhanced</span> {
+    <span class="keyword">public static void</span> <span class="method">main</span>(String[] args) {
+        System.out.println(<span class="string">"Advanced search engaged!"</span>);
+        SearchEngine.find(<span class="string">"*"</span>, <span class="keyword">true</span>);
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2 class="section-title">What's New in Enhanced Edition</h2>
+        <div class="features-grid">
+            <div class="feature-card glass-card reveal">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+                <h3>Advanced Search</h3>
+                <p>Search across `.class` files and resources simultaneously. Pinpoint exactly what you need with high precision.</p>
+            </div>
+            <div class="feature-card glass-card reveal">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h3>File Mask Scoping</h3>
+                <p>Filter your search results using powerful glob patterns (e.g., `*Controller.class`, `*.xml`) to narrow your focus.</p>
+            </div>
+            <div class="feature-card glass-card reveal">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+                </div>
+                <h3>Exact & Regex Match</h3>
+                <p>Eliminate substring false positives with Exact Match, or harness the full power of Regular Expressions.</p>
+            </div>
+            <div class="feature-card glass-card reveal">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
+                </div>
+                <h3>Persistent History</h3>
+                <p>Your search patterns and file masks are automatically saved and remembered across application restarts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <h2 class="section-title">Download Latest Release</h2>
+        <p class="download-subtitle">Available for Windows, macOS, and Linux</p>
+        
+        <div class="download-grid">
+            <div class="download-card glass-card reveal">
+                <h3>Windows</h3>
+                <p>Standalone executable wrapper.</p>
+                <a href="https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download/jd-gui-enhanced-edition.exe" class="btn btn-primary btn-block">Download .exe</a>
+            </div>
+            <div class="download-card glass-card reveal">
+                <h3>macOS</h3>
+                <p>Apple macOS distribution.</p>
+                <a href="https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download/jd-gui-osx-1.6.6.tar" class="btn btn-primary btn-block" id="mac-download">Download .tar</a>
+            </div>
+            <div class="download-card glass-card reveal">
+                <h3>Universal</h3>
+                <p>Executable JAR file for all platforms.</p>
+                <a href="https://github.com/ktech-dev-ai/jd-gui-enhanced-edition/releases/latest/download/jd-gui-1.6.6.jar" class="btn btn-secondary btn-block" id="jar-download">Download .jar</a>
+            </div>
+        </div>
+        <div class="github-footer reveal">
+            <p>Source code and all releases available on <a href="https://github.com/ktech-dev-ai/jd-gui-enhanced-edition" target="_blank">GitHub</a>.</p>
+            <p class="license">Licensed under GNU GPL v3.0</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 NaresH K. Based on the original JD-GUI by Emmanuel Dupuy.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
